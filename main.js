@@ -4,7 +4,6 @@ import { contentType } from "https://deno.land/std/media_types/mod.ts";
 
 
 const docuemnt  = getPortfolioDocument();
-Deno.writeTextFileSync("public.html", docuemnt)
 
 export const getHeaders = (url) => {
     const headers = new Headers();
