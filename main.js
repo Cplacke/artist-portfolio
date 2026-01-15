@@ -24,7 +24,7 @@ serve((req) => {
         const file = Deno.openSync(path, { read: true });
         return new Response(file.readable, {
             status: 200,
-            headers: { 'Content-Type': getContentType(req.url) }
+            headers: getHeaders(new URL(req.url))
         });
     }
 
