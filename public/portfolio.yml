@@ -1,0 +1,107 @@
+name: Mikaela Nelson
+logo: https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/9b4c3899-5b27-437b-aa26-db437b80e482_rwc_0x0x1158x899x4096.PNG?h=2137b705d6ed0544e3e1d49990b03b02
+sections: 
+  - id: Gallery
+    title: Gallery
+    cards: 
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/d4e9f25e-3c55-4f10-8c18-71bb068d99b6_car_202x158.png?h=a7e60f9fb1a028dd2239639fdfcb2ad5"
+        title: "Digital Art"
+        details:
+          - Illustrations, 3D modeling, Animation
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/5aae0cc9-b4f2-43b4-9403-2cb346602872_car_202x158.jpeg?h=3271c5bd83ca54c347b85edc68f79697"
+        title: "Traditional Art"
+        details:
+          - Canvas and other Traditional Mediums
+      - image: https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/732ea16b-6250-4058-ba79-f8e169948ae4_rwc_0x157x1439x1125x640.jpeg?h=392a58db7a44a81f3bb0b45b83d0b8de
+        title: "Books"
+        details: 
+          - Childrens Book Author and Illustrator
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/750ebfa5-beda-4edb-8be2-8f2d95e8e2c0_rwc_301x138x2765x2161x2765.jpeg?h=5273c32c3a20a062e4e72dc267bdf8a6"
+        title: "Murals"
+        details:
+          - Indoor and Outdoor World Painting
+      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/36468f24-12d7-45e1-9f95-cdfbd524a99b_rwc_0x0x4096x3202x4096.jpeg?h=a22226e26c6e8a3b73242b3986659b9c"
+      #   title: "Animations"
+      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/8e5b3ce5-1cee-4745-916d-e2fa4868814b_rwc_0x81x1280x1000x1280.PNG?h=35f9d7f502aa9b81e9e398a6f7d6b509"
+      #   title: "Pet Portraits"
+      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/e067fcbe-06a4-4496-b78c-5de03fe1a9f8_rwc_111x0x1753x1370x1753.png?h=ee6871ce35991fe48882066fcb2e473c"
+      #   title: "Stickers"
+      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/0a75c522-7d31-4993-9a4c-654a217fafe6_car_202x158.jpeg?h=0b78ca773a0548ad6d79cd2434be2fce"
+      #   title: "3D Renders"
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/8b4e7631-ab27-4b67-b725-070a51e1f1e4_rwc_0x109x1000x781x1000.jpg?h=f8bd02bc032a0b29af743c63430d68ed"
+        title: "Garmet Designs"
+        details: 
+          - Jerseys, Cosplay, and Clothing
+
+  # - id: crafting
+  #   title: Crafting
+  #   cards: 
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/b0e8ceea-baa3-4cd6-a264-474d7bbb4394_car_202x158.jpeg?h=7b337b6ee14efe17160404ba07fca86f"
+  #       title: "Prosthetic Dolls"
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/794a8b2a-ee05-43e0-a2eb-b9618b35f0cb_car_202x158.jpeg?h=7c88b6dab1d3455f8d8e6a4477d4b99b"
+  #       title: "Beadwork"
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/f3707497-b05e-4c7c-ae11-e4aa67a7b919_rwc_0x494x3024x2364x3024.jpeg?h=d2882bbdfdf219f3ea8013a400b2afb7"
+  #       title: "3D Models"
+
+  # - id: sewing
+  #   title: Sewing
+  #   cards: 
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/3fc7f288-7723-425c-9e13-f31a6b7c37bc_car_202x158.jpeg?h=1e9937a67f71f403da972ef272b73584"
+  #       title: "Mobiles"
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/0b10bdd4-d061-48ec-b890-4a0eff1fefe1_car_202x158.jpeg?h=606f569ac143e98e88e37d8592560dde"
+  #       title: "Cosplay"
+  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/f1c651b9-e81a-435e-bb2b-4603979024a0_rwc_158x1450x2682x2096x2682.jpeg?h=3bff8974c09015d2c562941193830ecb"
+  #       title: "Quilting"
+
+  - id: books
+    title: Books
+    cards: 
+      - image: "https://m.media-amazon.com/images/I/61tX1HuWXiL._AC_CR0%2C0%2C0%2C0_SY315_.jpg"
+        title: "Frankie's New Shoes"
+        details:
+          - Follow along with Frankie as she goes through the steps of getting new ankle foot orthoses or AFOs! At first it's a little scary, but with the help of her orthotist, Frankie realizes there is nothing to be afraid of and that her new AFOs will make it easier to walk and play with friends!
+          - <a href="https://www.amazon.com/stores/author/B0BSMDGZTJ/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab&pd_rd_w=i9x11&content-id=amzn1.sym.7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_p=7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_r=143-7809362-4300437&pd_rd_wg=AqicG&pd_rd_r=56071b9c-9e61-4581-923d-55de2871eca6&ccs_id=85316711-04a2-4187-beca-0a292dfb58e5#:~:text=Quick-,look,-Frankie%27s%20New%20Shoes"> on Amazon </a>
+      - image: "https://m.media-amazon.com/images/I/6193D721XNL._AC_CR0%2C0%2C0%2C0_SY315_.jpg"
+        title: "Be Wild My Dear"
+        details:
+          - Be Wild, My Dear, Is a bedtime story that has colorful, illustrative text paired with fun, imaginative illustrations. Written to be read to the youngest adventurers, Be Wild, My Dear, focuses on honoring the wild that can be found within and learning from the wild that is all around.
+          - <a href="https://www.amazon.com/stores/author/B0BSMDGZTJ/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab&pd_rd_w=i9x11&content-id=amzn1.sym.7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_p=7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_r=143-7809362-4300437&pd_rd_wg=AqicG&pd_rd_r=56071b9c-9e61-4581-923d-55de2871eca6&ccs_id=85316711-04a2-4187-beca-0a292dfb58e5#:~:text=Quick-,look,-Frankie%27s%20New%20Shoes"> on Amazon </a>
+      - image: "https://m.media-amazon.com/images/I/61d0idUjO1L._AC_CR0%2C0%2C0%2C0_SY315_.jpg"
+        title: "Joanie's Journey"
+        details:
+          - Joanie has been struggling with self acceptance since the day she was born. However, one day that all changes when she bumps into a new friend. Find out how Joanie learns to embrace her differenes and use what makes her unique to save teh day!
+          - <a href="https://www.amazon.com/stores/author/B0BSMDGZTJ/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab&pd_rd_w=i9x11&content-id=amzn1.sym.7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_p=7e190e19-9f6f-4df8-807a-5a7608594741&pf_rd_r=143-7809362-4300437&pd_rd_wg=AqicG&pd_rd_r=56071b9c-9e61-4581-923d-55de2871eca6&ccs_id=85316711-04a2-4187-beca-0a292dfb58e5#:~:text=Quick-,look,-Frankie%27s%20New%20Shoes"> on Amazon </a>
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/dd6c4c0a-90ad-46a1-b8c7-3d3ed9cd7c8a_rwc_1019x0x2491x1948x2491.jpg?h=c0cd12c8ed80e2db120f583eac0b5e35"
+        title: "Freddie the Pirate"
+        details:
+          - Coming Soon!
+      - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/d1e30325-47b7-4bfa-887a-6e749ef93546_rwc_0x0x630x492x630.png?h=eadea06b480ff4e1c8ef074585139e31"
+        title: "Coloring Books"
+  - id: shows
+    title: Art Shows
+    cards: 
+      - title: Raleigh Brewing Company
+        image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/1c0b50ff-1246-491d-b028-8451a346f420_rw_3840.jpeg?h=e9e81a1fcd26f37fe1736fff2a131edf"
+        details: 
+          - First big show!
+  - id: about
+    title: About
+    large:
+      title: About Me
+      image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/d000773d-3c7e-4bb4-ac91-cf55dceeb652_rw_1200.jpg?h=5e617b0239a3e108a55906518e786527"
+      details: 
+        - Hello!
+        - I have always been a creative person. In my spare time I love to craft, paint, and tinker with new ideas. I fell in love with the idea of using my abilities to make others smile. 
+        - Currently, I am a resident in the field of prosthetics and orthotics in North Carolina. The children that I work with have inspired me to pursue a long time dream of becoming  a children's book Author/Illustrator. 
+        - I love having this creative outlet that is so much fun yet still challenges me. I hope my work inspires others and spreads joy.
+        - ~ Mikaela
+  - id: contact
+    title: Contact
+    large:
+      image: https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/9b4c3899-5b27-437b-aa26-db437b80e482_rwc_0x0x1158x899x4096.PNG?h=2137b705d6ed0544e3e1d49990b03b02
+      title: Contact Me
+      details: 
+        - Hello!
+        - Email 1234567890@yahoo.com
+        - Business Cards
+        - Intagram
