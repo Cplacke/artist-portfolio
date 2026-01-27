@@ -25,30 +25,82 @@ export const getMainDocuemnt = (bodyHtml) => {
             </head>
 
             <body>
-                <div class="container mb-5">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4">
-                            <img class="hero"
-                                src="${config.logo}"
-                                alt="${config.name}">
-                            <nav id="nav" class="text-center">
-                                <!-- <a href='#section'> section </a>  -->
-                                <h3 class="text-pink text-uppercase"> ${config.name} </h3>
-                                <a class="text-pink text-uppercase"> Artist </a>
-                                <a class="text-pink text-uppercase"> Maker </a>
-                                <a class="text-pink text-uppercase"> Storyteller </a>
-                            </nav>
+                <div class="bg-yellow">
+                    <div class="container py-1">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <img class="hero"
+                                    src="${config.logo}"
+                                    alt="${config.name}" />
+                                <nav id="nav" class="text-center">
+                                    <h3 class="text-pink text-uppercase"> ${config.name} </h3>
+                                    <a class="text-pink text-uppercase"> Artist </a>
+                                    <a class="text-pink text-uppercase"> Maker </a>
+                                    <a class="text-pink text-uppercase"> Storyteller </a>
+                                </nav>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                ${ bodyHtml }
+                            </div>
                         </div>
-                        <div class="col-12 col-md-8">
-                            ${ bodyHtml }
+
+                        <div class="text-center mt-5 pt-5">
+                            <h1 class="text-uppercase mt-5"> illustration Portfolio </h1>
+                            <p class="mb-0 mt-3"> Welcome to the illustration portion of Mickey Nelson Studios! </p>
+                            <p class="mb-0"> Below you’ll find a curated look at my illustration work—ranging picture books, to graphic design, to personal paintings.  </p>
+                            <p class="mb-0"> I’ve always been drawn to works that are whimsical, colorful, and full of magic! </p>
+
+                            <p class="mt-4 mb-0"> looking to collaborate or commission something new? </p>
+                            <p class="text-underlined"> i’d love to hear from you. </p>
                         </div>
                     </div>
                 </div>
 
-                
-                <footer>
-                    © 2026 ${config.name} • Local Artist Portfolio
-                </footer>
+                ${ createWaveDivider('#fff6b3', '#fff') }
+
+                <div class="bg-white">
+                    <div class="container">
+                        <div class="text-center">
+                            <h1 class="text-uppercase"> illustration </h1>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                            <p> ======================= IMAGE ======================= </p>
+                        </div>
+                    </div>
+                </div>
+
+                ${ createWaveDivider('#fff', '#bfec37') }
+
+                <div class="bg-green">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="d-flex">
+                                    <div>
+                                        <a> HOME </a>
+                                        <a> PORTFOLIO </a>
+                                        <a> BOOKS </a>
+                                    </div>
+                                    <div>
+                                        <img style="width: 420px; margin-top: -100px;" src="${config.logo}" alt="${config.name}" />
+                                    </div>
+                                    <div>
+                                        <a> CONTACT </a>
+                                        <a> SHOP </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </body>
         </html>
     `
@@ -89,9 +141,9 @@ export const getPortfolioDocument = () => {
             <h3 class="py-4 text-uppercase"> Mickey Nelson Studios </h3>
             <div class="d-flex flex-wrap colorful">
                 <div class="box-menu my-2 align-content-center mx-auto w-30 opacity-0">  </div>
-                <div class="box-menu my-2 align-content-center mx-auto w-30 bg-pink"> Portfolio </div>
+                <div class="box-menu my-2 align-content-center mx-auto w-30 bg-pink"> illustration Portfolio </div>
                 <div class="box-menu my-2 align-content-center mx-auto w-30 bg-blue"> Books </div>
-                <div class="box-menu my-2 align-content-center mx-auto w-30 bg-purple"> About </div>
+                <div class="box-menu my-2 align-content-center mx-auto w-30 bg-purple"> Studio Work </div>
                 <div class="box-menu my-2 align-content-center mx-auto w-30 bg-green"> Contact </div>
                 <div class="box-menu my-2 align-content-center mx-auto w-30 bg-orange"> Shop </div>
             </div>
@@ -126,4 +178,29 @@ export const getGalleryDocuemnt = (galleryTitle) => {
         </section>
     `
     return getMainDocuemnt(galleryBodyHtml)
+}
+
+export const createWaveDivider = (topColor, bottomColor) => {
+    return `
+        <div>
+            <svg
+                viewBox="0 0 1000 200"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                >
+
+                <path
+                    d=" M 0 100 C 200 20, 300 20, 400 100 C 500 160, 600 160, 700 100 C 800 40, 900 40, 1000 100 L 1000 0 L 0 0 Z "
+                    fill="${topColor}"
+                />
+
+                <path
+                    d=" M 0 100 C 200 20, 300 20, 400 100 C 500 160, 600 160, 700 100 C 800 40, 900 40, 1000 100 L 1000 200 L 0 200 Z "
+                    fill="${bottomColor}"
+                />
+
+                </svg>
+
+        </div>
+    `
 }

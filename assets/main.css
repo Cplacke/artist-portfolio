@@ -15,22 +15,28 @@
 }
 
 :root {
-  --color-pink: hotpink; /* Global variable */
-  --color-blue: blue; /* Global variable */
-  --color-purple: purple; /* Global variable */
-  --color-green: limegreen; /* Global variable */
-  --color-orange: orange ; /* Global variable */
+  --color-pink: rgb(232, 106, 174); /* Global variable */
+  --color-blue: rgb(127, 227, 195); /* Global variable */
+  --color-purple: rgb(155, 107, 214); /* Global variable */
+  --color-green: rgb(191, 236, 55); /* Global variable */
+  --color-orange: rgb(244, 140, 107) ; /* Global variable */
 
-  --background-color: lightyellow;
+  --background-color: #fff6b3;
   --spacing: 10px;
 }
 
 body {
     margin: 0;
     font-family: 'Flowerbust', Arial, Helvetica, sans-serif;
-    background: var(--background-color);
     color: #222;
     line-height: 1.6;
+}
+
+.bg-white { background-color: #fff; }
+.bg-yellow { background: var(--background-color); }
+.bg-green { background-color: var(--color-green);}
+.bg-flower-image {
+    background-image: url('https://media.canva.com/v2/image-resize/format:PNG/height:1199/quality:100/uri:ifs%3A%2F%2FM%2Fdbf2783f-7329-4cb0-8a89-e56d0a9fa9d1/watermark:F/width:1600?csig=AAAAAAAAAAAAAAAAAAAAAHC7Yoh_y56h2Wr2-gHrdYeixav1S6hGqipLEnjVFvIq&exp=1769561144&osig=AAAAAAAAAAAAAAAAAAAAANvoERUcQ4jHOMCTxiPoCdV_dZe6CpPvFwv7yBh6YLzU&signer=media-rpc&x-canva-quality=screen_2x');
 }
 
 img.hero {
@@ -44,37 +50,41 @@ header {
     /* padding: 2rem; */
 }
 
-header h1 {
-    margin: 0;
+h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
+    color: var(--color-pink);
 }
 
-header p {
-    margin-top: 0.5rem;
+p {
+    font-size: 1.2rem;
     color: var(--color-pink);
 }
 nav {
     padding-top: 1rem;
     /* display: flex; */
 }
-
 nav a {
     transition: background-color 0.5s ease, color 0.5s ease;
     border-radius: 10px 0;
     text-decoration: none;
-    display: block;
     padding: 0 1rem;
-    color: black;
-    font-size: 1.5rem;
 }
 nav a:hover {
     background-color: #fff;
+}
+a {
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 h3 {
     color: var(--color-pink);
     font-size: 2rem;
 }
+
+
 .opacity-0 { opacity: 0; }
 .bg-pink { background-color: var(--color-pink); color: white; }
 .bg-blue { background-color: var(--color-blue); }
