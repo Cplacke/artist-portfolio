@@ -1,34 +1,34 @@
-import { getPortfolioDocument } from './public/generate.js'
+import { getPortfolioDocument, getGalleryDocuemnt } from './src/generate.js'
 import { serve } from "https://deno.land/std@0.116.0/http/server.ts";
-import { contentType } from "https://deno.land/std/media_types/mod.ts";
+import { getHeaders } from './util.js'
 
 
-const docuemnt  = getPortfolioDocument();
-
-export const getHeaders = (url) => {
-    const headers = new Headers();
-    headers.set("Content-Type", getContentType(url.pathname) || "text/plain");
-    return headers;
-}
-
-export const getContentType = (path) => {
-    const ext = /.*?(\..+$)/.exec(path)?.at(1);
-    return contentType(ext);
-}
 
 serve((req) => {
-    if (/\/assets/i.test(req.url)) {
-        const path = './assets'+req.url
-            .substring(req.url.indexOf('/assets') + 7)
-        console.info(`serving asset path `, req.url);
-        const file = Deno.openSync(path, { read: true });
+    const assetsCheck = /\/assets\/(.*)/i.exec(req.url)
+
+    if (assetsCheck) {
+        console.info(`serving asset path `, assetsCheck[0]);
+        const file = Deno.openSync(`.${assetsCheck[0]}`, { read: true });
         return new Response(file.readable, {
             status: 200,
             headers: getHeaders(new URL(req.url))
         });
     }
 
-    return new Response(docuemnt, {
+    const galleryCheck = /\/gallery\/(.*)/i.exec(req.url)
+    if (galleryCheck !== null) {
+        console.info(`serving gallery path `, galleryCheck[0]);
+        const htmlGallery = getGalleryDocuemnt(galleryCheck[1]);
+         return new Response(htmlGallery, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+        })
+    }
+
+    console.info(`serving HOMEPAGE `);
+    const htmlHomepage  = getPortfolioDocument();
+    return new Response(htmlHomepage, {
         status: 200,
         headers: { 'Content-Type': 'text/html' }
     })

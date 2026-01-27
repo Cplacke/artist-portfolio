@@ -1,5 +1,6 @@
 name: Mikaela Nelson
 logo: https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/9b4c3899-5b27-437b-aa26-db437b80e482_rwc_0x0x1158x899x4096.PNG?h=2137b705d6ed0544e3e1d49990b03b02
+
 sections: 
   - id: Gallery
     title: Gallery
@@ -20,38 +21,10 @@ sections:
         title: "Murals"
         details:
           - Indoor and Outdoor World Painting
-      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/36468f24-12d7-45e1-9f95-cdfbd524a99b_rwc_0x0x4096x3202x4096.jpeg?h=a22226e26c6e8a3b73242b3986659b9c"
-      #   title: "Animations"
-      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/8e5b3ce5-1cee-4745-916d-e2fa4868814b_rwc_0x81x1280x1000x1280.PNG?h=35f9d7f502aa9b81e9e398a6f7d6b509"
-      #   title: "Pet Portraits"
-      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/e067fcbe-06a4-4496-b78c-5de03fe1a9f8_rwc_111x0x1753x1370x1753.png?h=ee6871ce35991fe48882066fcb2e473c"
-      #   title: "Stickers"
-      # - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/0a75c522-7d31-4993-9a4c-654a217fafe6_car_202x158.jpeg?h=0b78ca773a0548ad6d79cd2434be2fce"
-      #   title: "3D Renders"
       - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/8b4e7631-ab27-4b67-b725-070a51e1f1e4_rwc_0x109x1000x781x1000.jpg?h=f8bd02bc032a0b29af743c63430d68ed"
         title: "Garmet Designs"
         details: 
           - Jerseys, Cosplay, and Clothing
-
-  # - id: crafting
-  #   title: Crafting
-  #   cards: 
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/b0e8ceea-baa3-4cd6-a264-474d7bbb4394_car_202x158.jpeg?h=7b337b6ee14efe17160404ba07fca86f"
-  #       title: "Prosthetic Dolls"
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/794a8b2a-ee05-43e0-a2eb-b9618b35f0cb_car_202x158.jpeg?h=7c88b6dab1d3455f8d8e6a4477d4b99b"
-  #       title: "Beadwork"
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/f3707497-b05e-4c7c-ae11-e4aa67a7b919_rwc_0x494x3024x2364x3024.jpeg?h=d2882bbdfdf219f3ea8013a400b2afb7"
-  #       title: "3D Models"
-
-  # - id: sewing
-  #   title: Sewing
-  #   cards: 
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/3fc7f288-7723-425c-9e13-f31a6b7c37bc_car_202x158.jpeg?h=1e9937a67f71f403da972ef272b73584"
-  #       title: "Mobiles"
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/0b10bdd4-d061-48ec-b890-4a0eff1fefe1_car_202x158.jpeg?h=606f569ac143e98e88e37d8592560dde"
-  #       title: "Cosplay"
-  #     - image: "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/f1c651b9-e81a-435e-bb2b-4603979024a0_rwc_158x1450x2682x2096x2682.jpeg?h=3bff8974c09015d2c562941193830ecb"
-  #       title: "Quilting"
 
   - id: books
     title: Books
@@ -105,3 +78,17 @@ sections:
         - Email 1234567890@yahoo.com
         - Business Cards
         - Intagram
+
+gallery:
+  - title: Murals
+    thumbnail: https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/750ebfa5-beda-4edb-8be2-8f2d95e8e2c0_rwc_301x138x2765x2161x2765.jpeg?h=5273c32c3a20a062e4e72dc267bdf8a6
+    images:
+      - title: Buffalo NY Downtown
+        image:  https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/750ebfa5-beda-4edb-8be2-8f2d95e8e2c0_rwc_301x138x2765x2161x2765.jpeg?h=5273c32c3a20a062e4e72dc267bdf8a6
+        caption: 
+      - title: Buffalo NY Downtown
+        image:  https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/750ebfa5-beda-4edb-8be2-8f2d95e8e2c0_rwc_301x138x2765x2161x2765.jpeg?h=5273c32c3a20a062e4e72dc267bdf8a6
+        caption: 
+      - title: Buffalo NY Downtown
+        image:  https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/750ebfa5-beda-4edb-8be2-8f2d95e8e2c0_rwc_301x138x2765x2161x2765.jpeg?h=5273c32c3a20a062e4e72dc267bdf8a6
+        caption: 
