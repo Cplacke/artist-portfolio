@@ -18,7 +18,16 @@ export const getContactComponent = () => {
            <div class="bg-yellow">
                <div class="container">
                    <div class="text-center text-purple py-1">
-                       <h1> Coming Soon </h1>
+                       <h1 class="text-uppercase"> Mickeynelson3@gmail.com </h1>
+                       <ul style="
+                            width: fit-content;
+                            margin: auto;
+                            font-size: 2rem;
+                       ">
+                            <li> Book Idea </li>
+                            <li> Illustration Commision </li>
+                            <li> Birthday PArty </li>
+                        </ul>
                    </div>
                </div>
            </div>

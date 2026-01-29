@@ -3,7 +3,18 @@ import { getFooterComponent } from "../footer.js";
 import { getHeaderComponent } from "../header.js";
 
 export const getStudioComponent = () => {
-   const portfolioBodyHtml = `
+
+    const sets = {};
+    for (const dir of Deno.readDirSync("./assets/images/studio")) {
+        if (dir.isDirectory) {
+            sets[dir.name] = []
+            for (const file of Deno.readDirSync(`./assets/images/studio/${dir.name}`)) {
+                sets[dir.name].push(`/assets/images/studio/${dir.name}/${file.name}`)
+            }
+        }   
+    }
+
+    const portfolioBodyHtml = `
            <div class="bg-purple h-100 pt-2 text-center">
                 ${ getHeaderComponent() }
                 <div class="container">
@@ -24,32 +35,20 @@ export const getStudioComponent = () => {
            </div>
    
            ${ createWaveDivider('rgb(155, 107, 214)', '#fff') }
-           
+
            <div class="bg-white">
                <div class="container">
-                   <div class="text-center">
-                       <h3 class="text-black text-uppercase mb-5"> Painting </h3>
-                       <div class="gallery">
-                            <p> photo gallery </p>
-                       </div>
-                   </div>
-               </div>
-               <div class="container">
-                   <div class="text-center">
-                       <h3 class="text-black text-uppercase mb-5"> Sculpting </h3>
-                       <div class="gallery">
-                            <p> photo gallery </p>
-                       </div>
-                   </div>
-               </div>
-               <div class="container">
-                   <div class="text-center">
-                       <h3 class="text-black text-uppercase mb-5"> 3D Modeling </h3>
-                       <div class="gallery">
-                            <p> photo gallery </p>
-                       </div>
-                   </div>
-               </div>
+                ${
+                    Object.keys(sets).map((set) => (`
+                        <div class="text-center">
+                            <h3 class="text-black text-uppercase mb-5"> ${set} </h3>
+                            <div class="gallery">
+                                ${ sets[set].map((img) => (`<img src="${img}" />`)).join(' ') }
+                            </div>
+                        </div>
+                    `)).join('')
+                }
+                </div>
            </div>
    
            ${ getFooterComponent('#fff') }

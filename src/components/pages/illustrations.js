@@ -3,6 +3,12 @@ import { getFooterComponent } from "../footer.js";
 import { getHeaderComponent } from "../header.js";
 
 export const getIllustrationsComponent = () => {
+
+    const images = [];
+    for (const file of Deno.readDirSync("./assets/images/illustrations")) {
+        images.push(`/assets/images/illustrations/${file.name}`);
+    }
+
     const portfolioBodyHtml = `
         <div class="bg-pink h-100 pt-2 text-center">
             ${ getHeaderComponent() }
@@ -25,25 +31,7 @@ export const getIllustrationsComponent = () => {
                     <h3 class="text-uppercase mb-5"> illustrations </h3>
                     <div class="gallery">
                         ${
-                            [
-                                '/assets/images/image0.png',
-                                '/assets/images/image1.jpeg',
-                                '/assets/images/image2.png',
-                                '/assets/images/image3.jpeg',
-                                '/assets/images/image4.jpeg',
-                                '/assets/images/image5.png',
-                                '/assets/images/image6.jpeg',
-                                '/assets/images/image7.jpeg',
-                                '/assets/images/image8.jpeg',
-                                '/assets/images/image9.jpeg',
-                                '/assets/images/image10.jpeg',
-                                '/assets/images/image11.jpeg',
-                                '/assets/images/image12.jpeg',
-                                '/assets/images/image13.jpeg',
-                                '/assets/images/image14.jpeg',
-                            ].map((img) => (`
-                                <img src="${img}" />
-                            `)).join(' ')
+                            images.map((img) => (`<img src="${img}" />`)).join(' ')
                         }
                     </div>
                 </div>
