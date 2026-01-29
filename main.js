@@ -1,6 +1,8 @@
-import { getPortfolioDocument, getGalleryDocuemnt } from './src/generate.js'
+// import { getHomeComponent, getGalleryDocuemnt } from './src/generate.js'
 import { serve } from "https://deno.land/std@0.116.0/http/server.ts";
 import { getHeaders } from './util.js'
+import { getHomePage, getIllustrationsPage, getBooksPage, getStudioPage } from "./src/components/pages/index.js";
+import { getMainDocuemnt } from "./src/components/common.js";
 
 
 
@@ -16,18 +18,48 @@ serve((req) => {
         });
     }
 
-    const galleryCheck = /\/gallery\/(.*)/i.exec(req.url)
-    if (galleryCheck !== null) {
-        console.info(`serving gallery path `, galleryCheck[0]);
-        const htmlGallery = getGalleryDocuemnt(galleryCheck[1]);
-         return new Response(htmlGallery, {
+    const illustrationCheck = /\/illust/i.test(req.url)
+    if (illustrationCheck) {
+        console.info(`serving illustrations path `);
+        const htmlIllustrations = getIllustrationsPage();
+         return new Response(htmlIllustrations, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+        })
+    }
+
+    const bookCheck = /\/books/i.test(req.url)
+    if (bookCheck) {
+        console.info(`serving books path `);
+        const htmlBooks = getBooksPage();
+         return new Response(htmlBooks, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+        })
+    }
+
+    const studioCheck = /\/studio/i.test(req.url)
+    if (studioCheck) {
+        console.info(`serving studio path `);
+        const htmlStudio = getStudioPage();
+         return new Response(htmlStudio, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+        })
+    }
+
+    const aboutCheck = /\/about/i.test(req.url)
+    if (aboutCheck) {
+        console.info(`serving about path `);
+        const htmlAbout = getBooksPage();
+         return new Response(htmlAbout, {
             status: 200,
             headers: { 'Content-Type': 'text/html' }
         })
     }
 
     console.info(`serving HOMEPAGE `);
-    const htmlHomepage  = getPortfolioDocument();
+    const htmlHomepage  = getHomePage();
     return new Response(htmlHomepage, {
         status: 200,
         headers: { 'Content-Type': 'text/html' }
