@@ -6,7 +6,6 @@ import { getStudioComponent } from "./studio.js";
 
 export const getHomePage = () => {
     const bodyHtml = getHomeComponent();
-    console.info('body');
     return getMainDocuemnt(bodyHtml);
 }
 

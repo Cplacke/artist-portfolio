@@ -1,9 +1,11 @@
 import { getConfig, createWaveDivider } from "../common.js";
 import { getFooterComponent } from "../footer.js";
+import { getHeaderComponent } from "../header.js";
 
 export const getIllustrationsComponent = () => {
     const portfolioBodyHtml = `
-        <div class="bg-pink h-100 text-center">
+        <div class="bg-pink h-100 pt-2 text-center">
+            ${ getHeaderComponent() }
             <div id="illustrations" class="text-center py-1">
                 <h1 class="text-white py-4 text-uppercase"> illustration Portfolio </h1>
                 <p class="text-white mb-0 mt-3"> Welcome to the illustration portion of Mickey Nelson Studios! </p>
@@ -40,11 +42,12 @@ export const getIllustrationsComponent = () => {
                                 '/assets/images/image13.jpeg',
                                 '/assets/images/image14.jpeg',
                             ].map((img) => (`
-                                <img src="${img}"/>
+                                <img src="${img}" />
                             `)).join(' ')
                         }
                     </div>
                 </div>
+
             </div>
         </div>
 

@@ -57,10 +57,13 @@ h1, h3 {
     overflow: visible;
 }
 
-img.hero {
-    width: 140%;
+#logo {
     display: block;
     margin: auto;
+    width: 100%;
+}
+#flower-bg {
+    width: 100%;
 }
 
 header {
@@ -81,13 +84,9 @@ nav {
     /* display: flex; */
 }
 nav a {
-    transition: background-color 0.5s ease, color 0.5s ease;
     border-radius: 10px 0;
     text-decoration: none;
     padding: 0 1rem;
-}
-nav a:hover {
-    background-color: #fff;
 }
 a {
     display: block;
@@ -124,8 +123,8 @@ footer a {
 
 
 .gallery {
-  column-count: 4;
-  column-gap: 1rem;
+    column-count: 2;
+    column-gap: 0.8rem;
 }
 
 .gallery img {
@@ -136,11 +135,84 @@ footer a {
   border-radius: 8px;
 }
 
+/* Medium Screen and Up */
+@media (min-width: 768px) {
+    .gallery {
+        column-count: 4;
+        column-gap: 1rem;
+    }
+    .box-menu {
+        width: 30% !important;
+    }
+    #logo {
+        width: 140%;
+    }
+    #flower-bg {
+        width: 150%;
+    }
+}
 
 
+.box-menu {
+  position: relative;
+  /* border-radius: 14px; */
+  /* background: linear-gradient(
+    120deg,
+    #0ff 0%,
+    #7f5cff 35%,
+    #ff6ec4 65%,
+    #0ff 100%
+  ); */
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  transform-style: preserve-3d;
+  perspective: 900px;
 
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+
+  
+}
+
+.box-menu:hover, .gallery img:hover {
+  animation:
+    holo-shift 6s linear infinite,
+    float-tilt 5s ease-in-out infinite;
+
+  transition: transform 0.3s ease;
+}
+
+/* Holographic sheen overlay */
+.box-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 100% 100%;
+  background: linear-gradient(
+    130deg,
+    transparent 25%,
+    rgba(255,255,255,0.35) 45%,
+    transparent 65%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.6;
+}
+
+/* Optional hover intensifier */
+.box-menu:hover {
+  transform: rotateX(10deg) rotateY(-12deg) translateY(-4px);
+}
+
+/* Animations */
+@keyframes float-tilt {
+  0%   { transform: rotateX(4deg) rotateY(-4deg) translateY(0); }
+  50%  { transform: rotateX(-4deg) rotateY(4deg) translateY(-6px); }
+  100% { transform: rotateX(4deg) rotateY(-4deg) translateY(0); }
+}
 
 
 

@@ -22,7 +22,7 @@ export const getFooterComponent = (topColor) => {
                             <div class="align-content-center">
                                 <a href="/studio"> STUDIO </a>
                                 <a href="/contact"> CONTACT </a>
-                                <a href="/shop"> SHOP </a>
+                                <a href="/about"> ABOUT </a>
                             </div>
                         </div>
                     </div>

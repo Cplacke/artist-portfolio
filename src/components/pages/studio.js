@@ -1,9 +1,11 @@
 import { createWaveDivider } from "../common.js";
 import { getFooterComponent } from "../footer.js";
+import { getHeaderComponent } from "../header.js";
 
 export const getStudioComponent = () => {
    const portfolioBodyHtml = `
-           <div class="bg-purple h-100 text-center">
+           <div class="bg-purple h-100 pt-2 text-center">
+                ${ getHeaderComponent() }
                 <div class="container">
                     <div class="row py-1">
                         <div class="col-12 col-md-6">
