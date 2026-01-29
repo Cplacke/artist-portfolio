@@ -48,7 +48,7 @@ export const createWaveDivider = (topColor, bottomColor) => {
         <div>
             <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                 <path d=" M 0 100 C 200 20, 300 20, 400 100 C 500 160, 600 160, 700 100 C 800 40, 900 40, 1000 100 L 1000 0 L 0 0 Z "
-                    fill="${topColor}" />
+                    fill="${topColor}" style="filter: drop-shadow(1px -1px 6px black)" />
 
                 <path d=" M 0 100 C 200 20, 300 20, 400 100 C 500 160, 600 160, 700 100 C 800 40, 900 40, 1000 100 L 1000 200 L 0 200 Z "
                     fill="${bottomColor}" />

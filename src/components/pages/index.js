@@ -3,6 +3,8 @@ import { getIllustrationsComponent } from './illustrations.js'
 import { getBooksComponent } from './books.js'
 import { getMainDocuemnt } from "../common.js";
 import { getStudioComponent } from "./studio.js";
+import { getContactComponent } from "./contact.js";
+import { getAboutComponent } from "./about.js";
 
 export const getHomePage = () => {
     const bodyHtml = getHomeComponent();
@@ -21,6 +23,16 @@ export const getBooksPage = () => {
 
 export const getStudioPage = () => {
     const bodyHtml = getStudioComponent();
+    return getMainDocuemnt(bodyHtml);
+}
+
+export const getAboutPage = () => {
+    const bodyHtml = getAboutComponent();
+    return getMainDocuemnt(bodyHtml);
+}
+
+export const getContactPage = () => {
+    const bodyHtml = getContactComponent();
     return getMainDocuemnt(bodyHtml);
 }
 

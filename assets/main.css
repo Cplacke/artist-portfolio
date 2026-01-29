@@ -28,9 +28,9 @@
   --color-blue: rgb(127, 227, 195); /* Global variable */
   --color-purple: rgb(155, 107, 214); /* Global variable */
   --color-green: rgb(191, 236, 55); /* Global variable */
+  --color-light-green: #e7ff9f;
   --color-orange: rgb(244, 140, 107) ; /* Global variable */
-
-  --background-color: #fff6b3;
+  --color-yellow: #fff6b3;
   --spacing: 10px;
 }
 
@@ -46,9 +46,14 @@ h1, h3 {
 }
 
 .text-pink { color: var(--color-pink); }
+.text-purple { color: var(--color-purple); }
+.text-light-green { color: var(--color-light-green);}
+.text-white { color: #fff; }
+.text-black { color: #000; }
 .bg-white { background-color: #fff; }
-.bg-yellow { background: var(--background-color); }
+.bg-yellow { background: var(--color-yellow); }
 .bg-green { background-color: var(--color-green);}
+.bg-light-green { background-color: var(--color-light-green);}
 .bg-flower-image {
     background-image: url('/assets/svg/Flower.svg');
     background-repeat: no-repeat;
@@ -74,6 +79,7 @@ header {
 h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
+    /* animation: float-tilt 5s ease-in-out infinite; */
 }
 
 p {
@@ -134,6 +140,7 @@ footer a {
   break-inside: avoid;
   border-radius: 8px;
 }
+
 
 /* Medium Screen and Up */
 @media (min-width: 768px) {
@@ -223,5 +230,9 @@ footer a {
 
 
 
-.text-white { color: #fff; }
-.text-black { color: #000; }
+
+.stroke-pink svg g { stroke: var(--color-pink); }
+.stroke-blue svg g { stroke: var(--color-blue); }
+.stroke-purple svg g { stroke: var(--color-purple); }
+.stroke-green svg g { stroke: var(--color-green); }
+.stroke-orange svg g { stroke: var(--color-orange); }

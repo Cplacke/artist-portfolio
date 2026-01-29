@@ -13,7 +13,7 @@ export const getBooksComponent = () => {
                </div>
            </div>
    
-           ${ createWaveDivider('rgb(127, 227, 195)', '#fff') }
+           ${ createWaveDivider('var(--color-blue)', '#fff') }
            
            <div class="bg-white">
                <div class="container">

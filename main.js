@@ -1,7 +1,7 @@
 // import { getHomeComponent, getGalleryDocuemnt } from './src/generate.js'
 import { serve } from "https://deno.land/std@0.116.0/http/server.ts";
 import { getHeaders } from './util.js'
-import { getHomePage, getIllustrationsPage, getBooksPage, getStudioPage } from "./src/components/pages/index.js";
+import { getHomePage, getIllustrationsPage, getBooksPage, getStudioPage, getAboutPage, getContactPage } from "./src/components/pages/index.js";
 import { getMainDocuemnt } from "./src/components/common.js";
 
 
@@ -51,8 +51,18 @@ serve((req) => {
     const aboutCheck = /\/about/i.test(req.url)
     if (aboutCheck) {
         console.info(`serving about path `);
-        const htmlAbout = getBooksPage();
+        const htmlAbout = getAboutPage();
          return new Response(htmlAbout, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+        })
+    }
+
+    const contactCheck = /\/contact/i.test(req.url)
+    if (contactCheck) {
+        console.info(`serving contact path `);
+        const html = getContactPage();
+         return new Response(html, {
             status: 200,
             headers: { 'Content-Type': 'text/html' }
         })
