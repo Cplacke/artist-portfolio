@@ -13,6 +13,15 @@
   font-style: normal;
   font-display: block; /* Controls font loading behavior */
 }
+@font-face {
+    font-family: 'Lazydog'; /* A name you choose for your font */
+    src: url('/assets/fonts/Lazydog.TTF'); 
+}
+
+@font-face {
+    font-family: 'Marykate';
+    src: url('/assets/fonts/marykate-regular.ttf');
+}
 
 :root {
   --color-pink: rgb(232, 106, 174); /* Global variable */
@@ -27,16 +36,25 @@
 
 body {
     margin: 0;
-    font-family: 'Flowerbust', Arial, Helvetica, sans-serif;
+    font-family: 'Marykate', Arial, Helvetica, sans-serif;
     color: #222;
     line-height: 1.6;
 }
 
+h1, h3 {
+    font-family: 'Lazydog';
+}
+
+.text-pink { color: var(--color-pink); }
 .bg-white { background-color: #fff; }
 .bg-yellow { background: var(--background-color); }
 .bg-green { background-color: var(--color-green);}
 .bg-flower-image {
-    background-image: url('https://media.canva.com/v2/image-resize/format:PNG/height:1199/quality:100/uri:ifs%3A%2F%2FM%2Fdbf2783f-7329-4cb0-8a89-e56d0a9fa9d1/watermark:F/width:1600?csig=AAAAAAAAAAAAAAAAAAAAAHC7Yoh_y56h2Wr2-gHrdYeixav1S6hGqipLEnjVFvIq&exp=1769561144&osig=AAAAAAAAAAAAAAAAAAAAANvoERUcQ4jHOMCTxiPoCdV_dZe6CpPvFwv7yBh6YLzU&signer=media-rpc&x-canva-quality=screen_2x');
+    background-image: url('/assets/svg/Flower.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-size: 150%;
+    overflow: visible;
 }
 
 img.hero {
@@ -53,12 +71,10 @@ header {
 h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
-    color: var(--color-pink);
 }
 
 p {
     font-size: 1.2rem;
-    color: var(--color-pink);
 }
 nav {
     padding-top: 1rem;
@@ -80,7 +96,6 @@ a {
     cursor: pointer;
 }
 h3 {
-    color: var(--color-pink);
     font-size: 2rem;
 }
 
@@ -107,7 +122,34 @@ footer a {
     text-decoration: none;
 }
 
-.w-30 {
-    width: 30%;
-    font-size: 2rem;
+
+.gallery {
+  column-count: 4;
+  column-gap: 1rem;
 }
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+  break-inside: avoid;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
