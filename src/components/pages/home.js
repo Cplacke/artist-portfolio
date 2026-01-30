@@ -5,7 +5,7 @@ export const getHomeComponent = () => {
     const portfolioBodyHtml = `
         <div class="bg-yellow align-content-center" style="min-height: 100vh;">
             <div style=" background-image: url('/assets/svg/Squiggle.svg'); 
-                backgound-position-x: 50%; background-repeat: repeat-x; 
+                background-position-x: 50%; background-repeat: repeat-x; 
                 height: 30px;"
             ></div>
             <div class="container h-100">
@@ -55,7 +55,7 @@ export const getHomeComponent = () => {
             </div>
             <div class="mt-3"
                 style=" background-image: url('/assets/svg/Squiggle.svg'); 
-                backgound-position-x: 50%; background-repeat: repeat-x; 
+                background-position-x: 50%; background-repeat: repeat-x; 
                 height: 30px;"
             ></div>
         </div>
