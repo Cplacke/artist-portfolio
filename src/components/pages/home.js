@@ -3,7 +3,7 @@ import { getConfig } from "../common.js";
 export const getHomeComponent = () => {
     const config = getConfig();
     const portfolioBodyHtml = `
-        <div class="bg-yellow" style="min-height: 100vh;">
+        <div class="bg-yellow align-content-center" style="min-height: 100vh;">
             <div style=" background-image: url('/assets/svg/Squiggle.svg'); 
                 backgound-position-x: 50%; background-repeat: repeat-x; 
                 height: 30px;"
