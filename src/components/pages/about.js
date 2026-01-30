@@ -5,7 +5,7 @@ import { getHeaderComponent } from "../header.js";
 export const getAboutComponent = () => {
    const portfolioBodyHtml = `
            <div class="bg-light-green h-100 pt-2 text-center">
-                ${ getHeaderComponent() }
+                ${ getHeaderComponent('purple') }
                <div id="illustrations" class="text-center py-1">
                    <h1 class="py-4 text-purple text-uppercase"> About Me </h1>
                </div>
