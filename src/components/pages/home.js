@@ -4,7 +4,11 @@ export const getHomeComponent = () => {
     const config = getConfig();
     const portfolioBodyHtml = `
         <div class="bg-yellow" style="min-height: 100vh;">
-            <div class="container h-100 py-1">
+            <div style=" background-image: url('/assets/svg/Squiggle.svg'); 
+                backgound-position-x: 50%; background-repeat: repeat-x; 
+                height: 30px;"
+            ></div>
+            <div class="container h-100">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 position-relative" style="z-index: 1;">
                         <img id="flower-bg" class="svg-top-left position-absolute" style="z-index: -5;"
@@ -49,6 +53,11 @@ export const getHomeComponent = () => {
                     </div>
                 </div>
             </div>
+            <div class="mt-3"
+                style=" background-image: url('/assets/svg/Squiggle.svg'); 
+                backgound-position-x: 50%; background-repeat: repeat-x; 
+                height: 30px;"
+            ></div>
         </div>
     `;
 

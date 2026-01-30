@@ -12,7 +12,7 @@ export const getIllustrationsComponent = () => {
     const portfolioBodyHtml = `
         <div class="bg-pink h-100 pt-2 text-center">
             ${ getHeaderComponent() }
-            <div id="illustrations" class="text-center py-1">
+            <div id="illustrations" class="text-center py-1" />
                 <h1 class="text-white py-4 text-uppercase"> illustration Portfolio </h1>
                 <p class="text-white mb-0 mt-3"> Welcome to the illustration portion of Mickey Nelson Studios! </p>
                 <p class="text-white mb-0"> Below you’ll find a curated look at my illustration work—ranging picture books, to graphic design, to personal paintings.  </p>
@@ -27,7 +27,11 @@ export const getIllustrationsComponent = () => {
         
         <div class="bg-white">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center position-relative">
+                    <img class="position-absolute"
+                        style="height: 130px; top: -150px; right: 0;"
+                        src="/assets/svg/Sparkles.svg"
+                    />
                     <h3 class="text-uppercase mb-5"> illustrations </h3>
                     <div class="gallery">
                         ${

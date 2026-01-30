@@ -17,16 +17,20 @@ export const getBooksComponent = () => {
            
            <div class="bg-white">
                <div class="container">
-                   <div class="text-center">
+                   <div class="text-center position-relative">
+                        <img class="position-absolute"
+                            style="width: 130px; top: -200px; right: 0;"
+                            src="/assets/svg/Stars.svg"
+                        />
                        <h3 class="text-black text-uppercase mb-5"> Written and Illustrated by Mikaelea Nelson </h3>
-                       <div class="gallery">
+                       <div class="gallery" style="column-count: 2">
                            ${
                                [
                                     "https://m.media-amazon.com/images/I/61tX1HuWXiL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
                                     "https://m.media-amazon.com/images/I/6193D721XNL._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
                                     "https://m.media-amazon.com/images/I/61d0idUjO1L._AC_CR0%2C0%2C0%2C0_SY315_.jpg",
                                ].map((img) => (`
-                                   <img src="${img}"/>
+                                   <img src="${img}" style="max-width: 300px;" class="mx-auto"/>
                                `)).join(' ')
                            }
                        </div>

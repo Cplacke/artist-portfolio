@@ -17,17 +17,30 @@ export const getContactComponent = () => {
            
            <div class="bg-yellow">
                <div class="container">
-                   <div class="text-center text-purple py-1">
-                       <h1 class="text-uppercase"> Mickeynelson3@gmail.com </h1>
-                       <ul style="
-                            width: fit-content;
-                            margin: auto;
-                            font-size: 2rem;
-                       ">
-                            <li> Book Idea </li>
-                            <li> Illustration Commision </li>
-                            <li> Birthday PArty </li>
-                        </ul>
+                   <div class="text-center py-1 position-relative">
+                        <img class="position-absolute"
+                            style="width: 130px; top: -200px; left: 0;"
+                            src="/assets/svg/Stars.svg"
+                        />
+                       <h1 class="text-uppercase text-purple"> Mickeynelson3@gmail.com </h1>
+                       <div class="row mt-4"> 
+                            <div class="col-12 col-md-5 text-purple"> 
+                                <ul class="mb-4" style="width: fit-content; margin: auto; font-size: 2rem;">
+                                    <li> Book Idea </li>
+                                    <li> Illustration Commision </li>
+                                    <li> Birthday PArty </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-7"> 
+                                <div class="corkboard"> 
+                                    <p class="bg-blue"> note 0 </p>
+                                    <p class="bg-blue"> note  #22 you did a wonderful job on your latest relase of characters! love them all <3 </p>
+                                    <p class="bg-blue"> note  #68</p>
+                                    <p class="bg-blue"> note #4 verry long note about something that I want to contact yo uabout and we can do something that alot of people would really love! </p>
+                                </div>
+                            </div>
+                       </div>
+                       
                    </div>
                </div>
            </div>

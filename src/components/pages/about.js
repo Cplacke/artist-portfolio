@@ -13,10 +13,15 @@ export const getAboutComponent = () => {
    
            ${ createWaveDivider('var(--color-light-green)', 'var(--color-yellow)') }
            
-           <div class="bg-yellow text-pink">
+           <div class="bg-yellow">
+               
                <div class="container w-75">
                    <div class="row">
-                        <div class="col-12 col-md-7">
+                        <div class="col-12 col-md-7 text-pink position-relative">
+                            <img class="position-absolute"
+                                style="width: 130px; top: -150px;"
+                                src="/assets/svg/Sparkles.svg"
+                            />
                             <h4 class="text-center"> Hello! <h4>
                             <h4> I have always been a creative person. In my spare time I love to craft, paint, and tinker with new ideas. I fell in love with the idea of using my abilities to make others smile.  <h4>
                             <h4> Currently, I am a resident in the field of prosthetics and orthotics in North Carolina. The children that I work with have inspired me to pursue a long time dream of becoming a children's book Author/Illustrator.  <h4>
