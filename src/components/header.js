@@ -3,7 +3,7 @@ export const getHeaderComponent = (color = 'light-green') => {
         <div class="text-${color}">
             <div style="
                     background-image: url('/assets/svg/Scallops.svg');
-                    background-repeat: repeat;
+                    background-repeat: repeat-x;
                     height: 30px;
                     position: relative;
                     stroke: var(--color-${color});

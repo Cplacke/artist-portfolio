@@ -10,7 +10,7 @@ export const getHomeComponent = () => {
             ></div>
             <div class="container h-100">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 position-relative" style="z-index: 1;">
+                    <div class="col-12 col-md-4 position-relative" style="z-index: 1;">
                         <img id="flower-bg" class="svg-top-left position-absolute" style="z-index: -5;"
                             src="/assets/svg/Flower.svg" />
                         <img id="logo" class="hero"

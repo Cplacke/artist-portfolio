@@ -18,7 +18,7 @@ export const getAboutComponent = () => {
                <div class="container w-75">
                    <div class="row">
                         <div class="col-12 col-md-7 text-pink position-relative">
-                            <img class="position-absolute"
+                            <img class="position-absolute hover-tilt"
                                 style="width: 130px; top: -150px;"
                                 src="/assets/svg/Sparkles.svg"
                             />

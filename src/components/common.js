@@ -2,7 +2,7 @@
 export const getConfig = () => {
     return {
         name: 'Mikaela Nelson',
-        logo: 'https://media.canva.com/v2/image-resize/format:PNG/height:621/quality:100/uri:ifs%3A%2F%2FM%2Fb21bbbe4-9a01-4e35-a0bf-b83f188015ed/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAOs2MBEGMiZXhgbvwTAlZSTKRC6Va9r9HB3if0-SDolI&exp=1769559897&osig=AAAAAAAAAAAAAAAAAAAAAJRQQltv1iFvqpwGH327uSKg44PYSNK8hawmA842QYUe&signer=media-rpc&x-canva-quality=screen',
+        logo: 'https://media.canva.com/v2/image-resize/format:PNG/height:621/quality:100/uri:ifs%3A%2F%2FM%2Fb21bbbe4-9a01-4e35-a0bf-b83f188015ed/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAAMAfoaWY-E11D5Q8I1cjyA-jV876fG0NtqGkMsx4kLm&exp=1769793897&osig=AAAAAAAAAAAAAAAAAAAAAIqU0_Zon4fthNjiyRb6MlLkCCz6hBaAtHgvOk8bwrjE&signer=media-rpc&x-canva-quality=screen',
         gallery: [
             "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/d4e9f25e-3c55-4f10-8c18-71bb068d99b6_car_202x158.png?h=a7e60f9fb1a028dd2239639fdfcb2ad5",
             "https://cdn.myportfolio.com/d37fdbe1-7ddc-44b1-9bfa-6499a568ea5c/5aae0cc9-b4f2-43b4-9403-2cb346602872_car_202x158.jpeg?h=3271c5bd83ca54c347b85edc68f79697",

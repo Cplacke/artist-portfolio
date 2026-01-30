@@ -185,11 +185,9 @@ footer a {
   
 }
 
-.box-menu:hover, .gallery img:hover {
+.box-menu:hover, .hover-tilt, .gallery img:hover {
   animation:
-    holo-shift 6s linear infinite,
     float-tilt 5s ease-in-out infinite;
-
   transition: transform 0.3s ease;
 }
 

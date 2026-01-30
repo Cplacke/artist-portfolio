@@ -28,7 +28,7 @@ export const getIllustrationsComponent = () => {
         <div class="bg-white">
             <div class="container">
                 <div class="text-center position-relative">
-                    <img class="position-absolute"
+                    <img class="position-absolute hover-tilt"
                         style="height: 130px; top: -150px; right: 0;"
                         src="/assets/svg/Sparkles.svg"
                     />
