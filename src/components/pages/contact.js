@@ -1,3 +1,4 @@
+import { svgStars } from "../../../assets/svg/index.js";
 import { getConfig, createWaveDivider } from "../common.js";
 import { getFooterComponent } from "../footer.js";
 import { getHeaderComponent } from "../header.js";
@@ -18,10 +19,7 @@ export const getContactComponent = () => {
            <div class="bg-yellow">
                <div class="container">
                    <div class="text-center py-1 position-relative">
-                        <img class="position-absolute hover-tilt"
-                            style="width: 130px; top: -200px; left: 0;"
-                            src="/assets/svg/Stars.svg"
-                        />
+                        ${ svgStars('', 'class="position-absolute hover-tilt" style="width: 130px; top: -200px; left: 0;"') }
                        <h1 class="text-uppercase text-purple"> Mickeynelson3@gmail.com </h1>
                        <div class="row mt-4"> 
                             <div class="col-12 col-lg-5 text-purple"> 

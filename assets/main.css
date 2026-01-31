@@ -31,6 +31,8 @@
   --color-light-green: #e7ff9f;
   --color-orange: rgb(244, 140, 107) ; /* Global variable */
   --color-yellow: #fff6b3;
+  --color-black: #000;
+  --color-white: #fff;
   --spacing: 10px;
 }
 

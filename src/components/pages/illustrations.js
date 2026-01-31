@@ -1,3 +1,4 @@
+import { svgSparkles } from "../../../assets/svg/index.js";
 import { getConfig, createWaveDivider } from "../common.js";
 import { getFooterComponent } from "../footer.js";
 import { getHeaderComponent } from "../header.js";
@@ -28,10 +29,7 @@ export const getIllustrationsComponent = () => {
         <div class="bg-white">
             <div class="container">
                 <div class="text-center position-relative">
-                    <img class="position-absolute hover-tilt"
-                        style="height: 130px; top: -150px; right: 0;"
-                        src="/assets/svg/Sparkles.svg"
-                    />
+                    ${ svgSparkles('', 'class="position-absolute hover-tilt" style="height: 130px; top: -150px; right: 0;"' ) }
                     <h3 class="text-uppercase mb-5"> illustrations </h3>
                     <div class="gallery">
                         ${
