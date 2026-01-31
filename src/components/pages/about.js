@@ -3,6 +3,7 @@ import { getFooterComponent } from "../footer.js";
 import { getHeaderComponent } from "../header.js";
 
 export const getAboutComponent = () => {
+    const config = getConfig();
    const portfolioBodyHtml = `
            <div class="bg-light-green h-100 pt-2 text-center">
                 ${ getHeaderComponent('purple') }
@@ -29,7 +30,7 @@ export const getAboutComponent = () => {
                             <h4 class="text-end me-5"> ~ Mikaela <h4>
                         </div>
                         <div class="col-12 col-md-5">
-                            <img src="https://media.canva.com/v2/image-resize/format:JPG/height:800/quality:92/uri:ifs%3A%2F%2FM%2F7a31c6d7-64ad-4637-8278-9215e7525afc/watermark:F/width:600?csig=AAAAAAAAAAAAAAAAAAAAACc2zthg0TNcOrhpZ88-4UjSEK5LQI4Y1R7elPtDDIV8&exp=1769726644&osig=AAAAAAAAAAAAAAAAAAAAAHtJyvmJC9tGBDRP61_aBmfDY0HSNI00VaSHz0K6i3CN&signer=media-rpc&x-canva-quality=screen"
+                            <img src="${config.photo}"
                                 class="w-100"
                                 style="border-radius: 8px;"
                             />
